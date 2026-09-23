@@ -1,0 +1,187 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #2b1f3d;
+  background: #f8f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #5b2c90;
+  color: white;
+  padding: 28px 0;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+header p {
+  margin-top: 6px;
+  color: #e9dcf7;
+}
+
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  padding: 24px 0;
+  align-items: start;
+}
+
+.painel {
+  background: white;
+  border: 1px solid #e3d9f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(91, 44, 144, 0.05);
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.25rem;
+  color: #431f6e;
+}
+
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9b8e3;
+  border-radius: 5px;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #9b6bcc;
+  border-color: #5b2c90;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 14px;
+  background: #5b2c90;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #431f6e;
+}
+
+button.secundario {
+  background: #f0e8f7;
+  color: #431f6e;
+}
+
+button.secundario:hover {
+  background: #e1d2f0;
+}
+
+button.perigo {
+  background: #b3261e;
+}
+
+button.perigo:hover {
+  background: #8c1d18;
+}
+
+.acoes-formulario,
+.acoes-musica,
+.linha-busca,
+.cabecalho-lista {
+  display: flex;
+  gap: 8px;
+}
+
+.acoes-formulario {
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.cabecalho-lista {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho-lista h2 {
+  margin: 0;
+}
+
+.busca {
+  margin: 18px 0;
+}
+
+.linha-busca input {
+  flex: 1;
+}
+
+#mensagem {
+  min-height: 22px;
+  color: #5b2c90;
+  font-weight: 500;
+}
+
+#mensagem.erro {
+  color: #b3261e;
+}
+
+.lista-musicas {
+  display: grid;
+  gap: 10px;
+}
+
+.musica {
+  border: 1px solid #e3d9f0;
+  border-radius: 6px;
+  padding: 14px;
+  background: #faf8fc;
+}
+
+.musica h3 {
+  margin: 0 0 6px;
+  color: #431f6e;
+}
+
+.musica p {
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+
+.acoes-musica {
+  margin-top: 12px;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .linha-busca {
+    flex-direction: column;
+  }
+}

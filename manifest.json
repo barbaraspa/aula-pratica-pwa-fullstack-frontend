@@ -1,0 +1,17 @@
+{
+  "name": "Cadastro de Músicas",
+  "short_name": "Músicas",
+  "description": "Aplicação simples para gerenciar o catálogo de músicas",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f6fb",
+  "theme_color": "#5b2c90",
+  "icons": [
+    {
+      "src": "icon/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
