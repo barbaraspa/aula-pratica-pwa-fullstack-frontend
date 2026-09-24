@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/musicas";
+const API_URL = "https://aula-pratica-pwa-fullstack-backend-jk5q.onrender.com/musicas";
 
 const formulario = document.querySelector("#form-musica");
 const campoId = document.querySelector("#musica-id");
